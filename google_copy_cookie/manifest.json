@@ -1,0 +1,26 @@
+{
+    "name"              : "Copy Cookies",
+    "version"           : "0.0.1",
+    "manifest_version"  : 2,
+    "description"       : "Copy page cookies",
+    "background"        : {
+        "page"          : "background.html"
+    },
+    "omnibox"           : {
+        "keyword"       : "session_load"
+    },
+    "icons": {
+        "48"            : "vcards48.png",
+        "128"           : "vcards128.png"
+    },
+    "minimum_chrome_version"
+                        : "21",
+    "permissions"       : [
+        "cookies",
+        "*://*/*",
+        "clipboardWrite",
+        "contextMenus",
+        "tabs"
+    ]
+}
+

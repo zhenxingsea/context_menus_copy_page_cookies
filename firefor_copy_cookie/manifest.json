@@ -1,0 +1,28 @@
+{
+    "name"              : "Copy Cookies",
+    "version"           : "0.0.1",
+    "manifest_version"  : 2,
+    "description"       : "Copy page cookies",
+    "background"        : {
+        "page"          : "background.html"
+    },
+    "icons": {
+        "48"            : "vcards48.png",
+        "128"           : "vcards128.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["cookies_res.js"]
+        }
+    ],
+    "permissions"       : [
+        "cookies",
+        "<all_urls>",
+        "clipboardWrite",
+        "contextMenus",
+        "activeTab",
+        "tabs"
+    ]
+}
+
